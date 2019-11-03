@@ -12,8 +12,8 @@ sind = (total_mes * 5) / 100
 
 total_liq = total_mes - ir - inss - sind
 
-print("Seu salário bruto é de: " + str(total_mes))
-print("- IR (11%) : R$" + str(ir))
-print("- INSS (8%) : R$" + str(inss))
-print("- Sindicato ( 5%) : R$" + str(sind))
-print("= Salário Liquido: R$" +str (total_liq))
+print("Seu salário bruto é de: {0:.2f}".format(round(total_mes, 2)))
+print("\t- IR (11%) : R${0:.2f}".format(round(ir, 2)))
+print("\t- INSS (8%) : R${0:.2f}".format(round(inss, 2)))
+print("\t- Sindicato ( 5%) : R${0:.2f}".format(round(sind, 2)))
+print("\t\t= Salário Liquido: R${0:.2f}".format(round(total_liq, 2)))
